@@ -432,6 +432,7 @@ input::-webkit-input-placeholder {
 	background-size: cover;
 	height: 524px;
 	background-size: cover;
+	margin: 0 0 235px 0;
 }
 .calc-proj {
 	max-width: 1145px;
@@ -474,6 +475,82 @@ input::-webkit-input-placeholder {
 	-webkit-box-shadow: 0px 0px 30px 2px rgba(3,3,3,1);
 	-moz-box-shadow: 0px 0px 30px 2px rgba(3,3,3,1);
 	box-shadow: 0px 0px 30px 2px rgba(3,3,3,1);
+}
+.gallery {
+	max-width: 1145px;
+	width: 100%;
+	margin: 0 auto 50px;
+	line-height: 60px;
+	text-align: center;
+	font-size: 18px;
+}
+
+/*slider*/
+.visibleNearby {
+  width: 100%;
+  /*background: #141414;*/
+  color: #FFF;
+  padding-top: 25px;
+}
+.visibleNearby .rsGCaption {
+  font-size: 16px;
+  line-height: 18px;
+  padding: 12px 0 16px;
+  /*background: #141414;*/
+  width: 100%;
+  position: static;
+  float: left;
+  left: auto;
+  bottom: auto;
+  text-align: center;
+}
+.visibleNearby .rsGCaption span {
+  display: block;
+  clear: both;
+  color: #bbb;
+  font-size: 14px;
+  line-height: 22px;
+}
+/* Scaling transforms */
+.visibleNearby .rsSlide img {
+  opacity: 0.45;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+
+  -webkit-transform: scale(0.9);  
+  -moz-transform: scale(0.9); 
+  -ms-transform: scale(0.9);
+  -o-transform: scale(0.9);
+  transform: scale(0.9);
+}
+.visibleNearby .rsActiveSlide img {
+  opacity: 1;
+  -webkit-transform: scale(1);  
+  -moz-transform: scale(1); 
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+/*slider*/
+.photos-gallery-content {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	max-height: 770px;
+	height: 100vw;
+}
+.photos-gallery-item {
+	background-image: url(../img/neapolis.jpg);
+	background-size: cover;
+	width: 21%;
+	max-height: 210px;
+	height: 21vw;
+	display: flex;
+	align-items: flex-end;
+	padding: 10px;
+	text-decoration: none;
+	color: #fff;
 }
 @media screen and (max-width: 922px) {
 	.header-content {
